@@ -18,6 +18,8 @@ email VARCHAR(100) UNIQUE,
 
 password VARCHAR(255),
 
+role ENUM('user','admin') DEFAULT 'user',
+
 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 
 );
